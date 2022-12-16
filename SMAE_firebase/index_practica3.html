@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Programa elaborado por: Caballero Sanchez Ruben Abimalec
+    Matricula: 19760767
+    "Proyecto final buscador de frutas"                         -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--importando el archivo css que da diseño a la pagina-->
+    <link rel="stylesheet" href="estilos.css">
+    <!--importando las librerias de google fonts con tipos de letras-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Buscador, nutriologo</title>
+</head>
+
+<body>
+
+    <div class="principal">
+        <!--Contenedor que tiene el titulo de la pagina-->
+        <div class="titulo">
+            <h1>
+                Consulta menu nutriologo
+            </h1>
+        </div>
+        <!--Contenedor donde se encuentra el recuadro de insercion de texto de busqueda y el 
+            boton que Onclick que ejecuta la funcion asincrona de javascrip de busqueda-->
+        <div class="buscar">
+            <h2>
+                <input type="text" id="busqueda" placeholder="Busqueda">
+                <!--boton programado para ejecutar la funcion buscar()-->
+                <button class="button-on" onclick="buscar()">Buscar</button>
+            </h2>
+        </div>
+
+        <label label id="Contador" class="contador"></label>
+        <!--Contenedor donde se inseran los resultados de la busqueda automaticamente-->
+        <div id="app" class="app"> </div>
+    </div>
+
+
+    <!--Importacion de el archivo js que enlaza a la funcion de busqueda-->
+    <script src="buscar3.js"></script>
+</body>
+
+</html>

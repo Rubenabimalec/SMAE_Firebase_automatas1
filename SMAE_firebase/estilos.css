@@ -1,0 +1,83 @@
+
+body{
+    min-height: 100vh;
+    background-image: url("./fondo.jpg")  ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-attachment: fixed;
+}
+.buscar{
+    display: flex;
+    justify-content: center;
+}
+.titulo h1{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    padding: 30px 30px;
+    color:#41521f;
+}
+.app{
+    font-family: 'Source Sans 3', sans-serif;
+    vertical-align: middle auto;
+    justify-content: left;
+    font-size: 30px;
+    padding-left: 100px;
+}
+#busqueda {
+    width: 240px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #039be5;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    margin: 20px;
+}
+.button-on{
+    text-decoration: none;
+    padding:10px 20px;
+    font-size: 1.5rem; 
+    position: relative;
+    margin: 32px;
+    background:  #a7c957 ;
+    color: #ffffff;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+.button-on::after, .button-on::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #386641;
+    border-radius: inherit ;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+.button-on:hover{
+    transform: translate(-12px,-12px) ;
+}
+.button-on:hover::after{
+    transform: translate(6px, 6px);
+}
+.button-onhover::before{
+    transform: translate(12px, 12px);
+}
+.contador{
+    font-family: 'Concert One', cursive;
+    display: flex;
+    justify-content: left;
+    font-size: 30px;
+    padding-left: 100px;
+}
+
+
+
+
